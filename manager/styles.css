@@ -229,22 +229,17 @@ body {
 
 /* Dashboard Cards */
 .glass-card {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-    padding: 25px;
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    position: relative;
-    overflow: hidden;
+  background-color: #fff9f0; /* Soft cream shade */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  text-align: center;
 }
 
-/* Hover Effects on Cards */
+/* Hover effect */
 .glass-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
 }
 
 /* Floating Emoji Effect */
@@ -266,28 +261,50 @@ body {
 /* Card Titles */
 .glass-card h3 {
     font-weight: bold;
-    color: #fff;
+    color: #7a37c1;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Buttons */
 .custom-btn {
-    margin-top: 15px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
-    position: relative;
-    overflow: hidden;
+  background: linear-gradient(to right, #d4145a, #fbb03b); /* vibrant pink-orange gradient */
+  color: white !important;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
 }
 
-/* Glowing Effect */
+/* Button hover effect */
 .custom-btn:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    transform: scale(1.05);
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+/* Back to Home Button */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(to right, #d4145a, #fbb03b);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 1000;
+}
+
+/* Hover effect */
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1.text-center.text-primary.mb-4{
+  color: #F1F4FF;
 }
