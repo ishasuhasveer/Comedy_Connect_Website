@@ -68,7 +68,7 @@ h1 {
     height: 250px;
     border-radius: 50%;
     border: 2px solid black;
-    background: url('/AB2.jpg') no-repeat center/cover;
+    background: url('/artist/AB2.jpg') no-repeat center/cover; 
     margin-right: 90px;
 }
 

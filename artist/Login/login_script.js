@@ -81,7 +81,7 @@ authForm.addEventListener("submit", (e) => {
                     if (userRole === "admin") {
                         window.location.href = "/admin/admin_home.html";
                     } else if (userRole === "artist") {
-                        window.location.href = "/Dashboard/dashboard.html";
+                        window.location.href = "/artist/Dashboard/dashboard.html";
                     } else if (userRole === "venue_manager") {
                         window.location.href = "/manager/index.html";
                     } else {
