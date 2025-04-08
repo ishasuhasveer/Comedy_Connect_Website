@@ -1,0 +1,348 @@
+/* Top section containing profile details */
+.header {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    width: auto;
+    height: fit-content;
+}
+
+/* Menu Icon */
+.menu-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Text styling */
+.text-content {
+    max-width: 60%;
+    padding-left: 150px;
+    text-align: left;
+}
+
+
+#artist-roles, #artist-email {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+.merienda{
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.text-content p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Circular profile image */
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: url('/AB2.jpg') no-repeat center/cover;
+    margin-right: 90px;
+}
+
+
+/* Bottom content section */
+.content {
+    flex-grow: 1;
+    background: white; /* Light background for contrast */
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    color: rgb(1, 0, 70);
+    width: auto;
+    margin: 0px 60px 0px 140px;
+    padding: 40px 50px; /* Space inside the content box */
+    box-sizing: border-box;
+}
+
+.content > .events-panel,
+.content > .venue-availability,
+.content > .event-booking,
+.content > .notifications {
+    margin-bottom: 40px; /* Clean space between sections */
+}
+
+
+
+.events-panel, .venue-availability, .event-booking, .notifications {
+    padding: 40px;
+    background: radial-gradient(circle at top left, 
+        #fbbaac, 
+        #f7aaca,    
+        #f8cda2,
+        #f9a997,
+        #dc7cfa,
+        #f8cda2,
+        #fbbaac
+    );
+    margin-top: 5px;
+    border-radius: 80px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.events-panel:hover,
+.venue-availability:hover,
+.event-booking:hover,
+.notifications:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5px);
+}
+
+
+.event-card {
+    background-color: #f6f6f6;
+    padding: 15px;
+    border-left:3px solid rgb(1, 0, 70);
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft depth */
+    transition: box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    box-shadow: 0 8px 70px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+
+/* Base Button Styling */
+/* Button Styling */
+.event-booking-button {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border: none;
+  border-radius: 50px;
+  color: #ff2f00;
+  font-size: 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+}
+
+/* Image inside Button */
+.button-img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.4s ease-in-out, left 0.4s ease-in-out;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: faceTransition 4s infinite; /* Image transition before hover */
+}
+
+/* Expand on Hover */
+.event-booking-button:hover {
+  width: 220px;
+  border-radius: 30px;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+/* Move image slightly left and change on hover */
+.event-booking-button:hover .button-img {
+  left: 20px;
+  transform: none;
+  content: url('smile.png'); /* Change image to smile.png on hover */
+}
+
+/* Initially Hide Text */
+.button-text {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  left: 80px;
+  font-size: 18px;
+}
+
+/* Show Text on Hover */
+.event-booking-button:hover .button-text {
+  opacity: 1;
+}
+
+/* Keyframes for Automatic Image Transition */
+@keyframes faceTransition {
+  0% { content: url('straight-face.png'); }
+  20% { content: url('e1.png'); }
+  40% { content: url('e2.png'); }
+  60% { content: url('e3.png'); }
+  80% { content: url('e4.png'); }
+  100% { content: url('straight-face.png'); }
+}
+
+/* Venue List - Container */
+/* Venue List - Container */
+.venue-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Venue Card */
+.venue-card {
+  width: 300px;
+  height: 220px;
+  border-radius: 15px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.venue-card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Venue Name */
+.venue-card h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Venue Location */
+.venue-card p {
+  font-size: 16px;
+  color: #666;
+  margin: 5px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Capacity Highlight */
+.venue-card p:last-child {
+  font-size: 14px;
+  color: #ff5722;
+  font-weight: bold;
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Notifications Container */
+/* Notification Title */
+.notification-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: rgb(1, 0, 70);
+}
+
+/* Notification List */
+#notificationList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Notification Card */
+.notification-card {
+  background: #f6f6f6;
+  padding: 15px;
+  border-left: 6px solid #ff5722; /* Orange Left Border */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.notification-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Notification Text */
+.notification-text {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(1, 0, 70);
+  flex-grow: 1;
+}
+
+/* Close Button */
+.close-btn {
+  background: none;
+  border: none;
+  color: #ff3d3d;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+  transition: color 0.2s ease-in-out;
+}
+
+.close-btn:hover {
+  color: #d32f2f;
+}
+
+/* Animation for Removing Notifications */
+.notification-card.removed {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* "No new notifications" message */
+.no-notifications {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #777;
+  margin-top: 10px;
+
+}
+
+

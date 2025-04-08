@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Settings</title>
+    <link rel="stylesheet" href="/styles_body.css">
+    <link rel="stylesheet" href="/styles_sidebar.css">
+    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="/dark_mode.css">
+    <link rel="stylesheet" href="/Dashboard/styles_dashboard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar&display=swap');
+    </style>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="header">
+
+        <!-- Artist Info -->
+    <div class="text-content" id="artist-info">
+        <h1 style="font-size: 100px;color: white;">Settings</h1>
+    </div>
+    </div>
+
+    <!-- Mobile Sidebar Menu Button -->
+    <button class="sidebar-menu-button">
+        <span class="material-symbols-rounded">menu</span>
+      </button>
+      <aside class="sidebar">
+        <!-- Sidebar Header -->
+        <header class="sidebar-header">
+          <a href="#" class="header-logo">
+            <img src="/Dashboard/happy-face.png" alt="CodingNepal" />
+          </a>
+          <button class="sidebar-toggler">
+            <span class="material-symbols-rounded">chevron_left</span>
+          </button>
+        </header>
+        <nav class="sidebar-nav">
+          <!-- Primary Top Nav -->
+          <ul class="nav-list primary-nav">
+            <li class="nav-item">
+              <a href="/Dashboard/dashboard.html" class="nav-link">
+                <span class="material-symbols-rounded">dashboard</span>
+                <span class="nav-label">Dashboard</span>
+              </a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item">
+              <a href="/myevents/myevents.html" class="nav-link">
+                <span class="material-symbols-rounded">calendar_today</span>
+                <span class="nav-label">My Events</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">My Events</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="/Dashboard/dashboard.html#notificationList" class="nav-link">
+                <span class="material-symbols-rounded">notifications</span>
+                <span class="nav-label">Notifications</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Notifications</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+                <a href="/Analytics/analytics.html" class="nav-link">
+                    <span class="material-symbols-rounded">trending_up</span>
+                    <span class="nav-label">Analytics</span>
+                </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Analytics</a></li>
+              </ul>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item">
+              <a href="/Profile/profile.html" class="nav-link">
+                <span class="material-symbols-rounded">sentiment_satisfied</span>
+                <span class="nav-label">Profile</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Profile</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="/Schedule_Event/schedule-event.html" class="nav-link">
+                <span class="material-symbols-rounded">add</span>
+                <span class="nav-label">Schedule an Event</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Schedule an Event</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="settings.html" class="nav-link">
+                <span class="material-symbols-rounded">settings</span>
+                <span class="nav-label">Settings</span>
+              </a>
+            </li>
+          </ul>
+          <!-- Secondary Bottom Nav -->
+          <ul class="nav-list secondary-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="material-symbols-rounded">help</span>
+                <span class="nav-label">Support</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Support</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="material-symbols-rounded">logout</span>
+                <span class="nav-label">Sign Out</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="settings-container">
+    
+        <section>
+          <h2>General</h2>
+          <label>
+            Display Name:
+            <input type="text" placeholder="Enter your stage name" />
+          </label>
+          <label>
+            Bio:
+            <textarea placeholder="Tell us something about you..."></textarea>
+          </label>
+        </section>
+    
+        <section>
+          <h2>Theme & Appearance</h2>
+          <label class="toggle-label">
+            Dark Mode:
+            <label class="switch">
+              <input type="checkbox" id="darkModeToggle" />
+              <span class="slider"></span>
+            </label>
+          </label>
+          
+    
+          <label for="accentColorSelector">Accent Color:</label>
+            <select id="accentColorSelector">
+                <option value="#c200fb">Royal Purple</option>
+                <option value="#ec0868">Electric Pink</option>
+                <option value="#fc2f00">Fiery Red</option>
+                <option value="#ec7d10">Sunset Orange</option>
+                <option value="#ffbc0a">Golden Yellow</option>
+                <option value="#000000">Jet Black</option>
+                <option value="#ffffff">Pure White</option>
+            </select>
+
+    
+        </section>
+    
+        <section>
+          <h2>Notifications</h2>
+          <label><input type="checkbox" checked /> Booking Alerts</label>
+          <label><input type="checkbox" checked /> Event Status Updates</label>
+          <label><input type="checkbox" /> Admin Announcements</label>
+        </section>
+    
+        <section>
+          <h2>Security</h2>
+          <button>Change Password</button>
+          <button>View Login Activity</button>
+        </section>
+    
+        <section class="danger-zone">
+          <h2>Danger Zone</h2>
+          <button class="danger">Deactivate Account</button>
+        </section>
+      </div>
+    
+      <script src="settings.js"></script>
+      <script src="/dark_mode.js"></script>
+      <script src="/script_sidebar.js"></script>
+</body>
+</html>

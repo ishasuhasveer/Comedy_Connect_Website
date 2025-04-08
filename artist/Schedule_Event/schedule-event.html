@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Schedule Event</title>
+  <link rel="stylesheet" href="/dark_mode.css">
+  <link rel="stylesheet" href="/styles_body.css">
+  <link rel="stylesheet" href="/styles_sidebar.css">
+  <link rel="stylesheet" href="/Dashboard/styles_dashboard.css">
+  <link rel="stylesheet" href="schedule-event.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Mobile Sidebar Menu Button -->
+<button class="sidebar-menu-button">
+  <span class="material-symbols-rounded">menu</span>
+</button>
+
+<aside class="sidebar">
+  <header class="sidebar-header">
+    <a href="#" class="header-logo">
+      <img src="/Dashboard/happy-face.png" alt="Logo" />
+    </a>
+    <button class="sidebar-toggler">
+      <span class="material-symbols-rounded">chevron_left</span>
+    </button>
+  </header>
+  <nav class="sidebar-nav">
+    <ul class="nav-list primary-nav">
+      <li class="nav-item"><a href="/Dashboard/dashboard.html" class="nav-link"><span class="material-symbols-rounded">dashboard</span><span class="nav-label">Dashboard</span></a></li>
+      <li class="nav-item"><a href="/myevents/myevents.html" class="nav-link"><span class="material-symbols-rounded">calendar_today</span><span class="nav-label">My Events</span></a></li>
+      <li class="nav-item"><a href="/Dashboard/dashboard.html#notificationList" class="nav-link"><span class="material-symbols-rounded">notifications</span><span class="nav-label">Notifications</span></a></li>
+      <li class="nav-item"><a href="/Analytics/analytics.html" class="nav-link"><span class="material-symbols-rounded">trending_up</span><span class="nav-label">Analytics</span></a></li>
+      <li class="nav-item"><a href="/Profile/profile.html" class="nav-link"><span class="material-symbols-rounded">sentiment_satisfied</span><span class="nav-label">Profile</span></a></li>
+      <li class="nav-item"><a href="/Schedule_Event/schedule-event.html" class="nav-link"><span class="material-symbols-rounded">add</span><span class="nav-label">Schedule an Event</span></a></li>
+      <li class="nav-item"><a href="/Settings/settings.html" class="nav-link"><span class="material-symbols-rounded">settings</span><span class="nav-label">Settings</span></a></li>
+    </ul>
+    <ul class="nav-list secondary-nav">
+      <li class="nav-item"><a href="#" class="nav-link"><span class="material-symbols-rounded">help</span><span class="nav-label">Support</span></a></li>
+      <li class="nav-item"><a href="#" class="nav-link"><span class="material-symbols-rounded">logout</span><span class="nav-label">Sign Out</span></a></li>
+    </ul>
+  </nav>
+</aside>
+
+<!-- Header -->
+<div class="header">
+  <div class="text-content" id="artist-info">
+    <h1 style="font-size: 70px;">Schedule an Event</h1>
+  </div>
+</div>
+<div class="content">
+
+<!-- Main Content Row Layout -->
+<div class="content-row-layout">
+  <!-- Event Form -->
+  <div class="event-form-container">
+    <h2 style="color: rgb(10, 1, 129);">Create New Event</h2>
+
+    <label for="eventName">Event Name:</label>
+    <input type="text" id="eventName" placeholder="Enter your event name" />
+
+    <label for="eventDate">Date:</label>
+    <input type="date" id="eventDate" />
+
+    <label for="eventTime">Time:</label>
+    <input type="time" id="eventTime" />
+
+    <label for="eventCategory">Comedy Type:</label>
+    <select id="eventCategory">
+      <option value="stand-up">Stand-up</option>
+      <option value="improv">Improv</option>
+      <option value="roast">Roast</option>
+    </select>
+
+    <label>Select Venue:</label>
+    <div id="venueOptions">
+      <div class="venue-card" data-venue="Laugh Lounge">
+        <h3>Laugh Lounge</h3>
+        <p>Capacity: 100</p>
+        <p>Resources: Mic, Stage Lights, Seating</p>
+      </div>
+      <div class="venue-card" data-venue="Joke Joint">
+        <h3>Joke Joint</h3>
+        <p>Capacity: 80</p>
+        <p>Resources: Mic, Speaker, Projector</p>
+      </div>
+      <div class="venue-card" data-venue="Giggle Grounds">
+        <h3>Giggle Grounds</h3>
+        <p>Capacity: 150</p>
+        <p>Resources: Mic, Camera Setup, VIP Area</p>
+      </div>
+    </div>
+
+    <div class="form-buttons">
+      <button id="submitEvent">Submit</button>
+      <button id="cancelEvent">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Booked Shows List -->
+  <div class="booked-events-list" id="bookedShows">
+    <h3>Booked Shows</h3>
+    <!-- JavaScript will insert event cards here -->
+  </div>
+</div>
+</div>
+<!-- Scripts -->
+<script src ="/dark_mode.js"></script>
+<script src="/script_sidebar.js"></script>
+<script src="schedule-event.js"></script>
+</body>
+</html>

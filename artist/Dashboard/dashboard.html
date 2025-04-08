@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comedian Profile Page</title>
+    <link rel="stylesheet" href="/styles_body.css">
+    <link rel="stylesheet" href="/styles_sidebar.css">
+    <link rel="stylesheet" href="styles_dashboard.css">
+    <link rel="stylesheet" href="/dark_mode.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar&display=swap');
+    </style>
+</head>
+<body>
+
+    <!-- Mobile Sidebar Menu Button -->
+    <button class="sidebar-menu-button">
+        <span class="material-symbols-rounded">menu</span>
+      </button>
+      <aside class="sidebar">
+        <!-- Sidebar Header -->
+        <header class="sidebar-header">
+          <a href="#" class="header-logo">
+            <img src="happy-face.png" alt="CodingNepal" />
+          </a>
+          <button class="sidebar-toggler">
+            <span class="material-symbols-rounded">chevron_left</span>
+          </button>
+        </header>
+        <nav class="sidebar-nav">
+          <!-- Primary Top Nav -->
+          <ul class="nav-list primary-nav">
+            <li class="nav-item">
+              <a href="/Dashboard/dashboard.html" class="nav-link">
+                <span class="material-symbols-rounded">dashboard</span>
+                <span class="nav-label">Dashboard</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Dashboard</a></li>
+              </ul>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item">
+              <a href="/myevents/myevents.html" class="nav-link">
+                <span class="material-symbols-rounded">calendar_today</span>
+                <span class="nav-label">My Events</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">My Events</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="dashboard.html#notificationList" class="nav-link">
+                <span class="material-symbols-rounded">notifications</span>
+                <span class="nav-label">Notifications</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Notifications</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="/Analytics/analytics.html" class="nav-link">
+                <span class="material-symbols-rounded">trending_up</span>
+                <span class="nav-label">Analytics</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Analytics</a></li>
+              </ul>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item">
+              <a href="/Profile/profile.html" class="nav-link">
+                <span class="material-symbols-rounded">sentiment_satisfied</span>
+                <span class="nav-label">Profile</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Profile</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="/Schedule_Event/schedule-event.html" class="nav-link">
+                <span class="material-symbols-rounded">add</span>
+                <span class="nav-label">Schedule an Event</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Schedule an Event</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="/Settings/settings.html" class="nav-link">
+                <span class="material-symbols-rounded">settings</span>
+                <span class="nav-label">Settings</span>
+              </a>
+            </li>
+          </ul>
+          <!-- Secondary Bottom Nav -->
+          <ul class="nav-list secondary-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="material-symbols-rounded">help</span>
+                <span class="nav-label">Support</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Support</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="material-symbols-rounded">logout</span>
+                <span class="nav-label">Sign Out</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    <div class="header">
+
+        <!-- Artist Info -->
+    <div class="text-content" id="artist-info">
+        <h1 class="merienda" id="artist-name">Hi!<br>Abhishek</h1>
+        <p id="artist-roles">Stand-up Comedian | Storyteller | Improviser</p>
+        <p id="artist-email">Email: abhi.up@example.com</p>
+        <!-- Event Booking Form -->
+      <section class="event-venue-container">
+        <a href="/Schedule_Event/schedule-event.html" class="nav-link">
+        <button class="event-booking-button">
+            <img src="straight-face.png" alt="Straight Face" class="button-img">
+            <span class="button-text">Book an Event</span>
+        </button>
+      </a>
+    </section>
+    </div>
+
+
+    <div class="profile-image" id="artist-profile"></div>
+
+    </div>
+
+    <div class="content">
+
+
+        <!-- Event Overview -->
+        <section class="events-panel">
+            <div class="events-header">
+                <h2 style="margin-bottom: 5px;text-align: center;font-size: 40px;">Event Overview</h2>
+            </div>
+            <div class="events-list" id="eventsContainer">
+                <!-- Sample Event Cards -->
+                <div class="event-card" id="event-display">
+                    <h3>Stand-up Comedy Night</h3>
+                    <p><strong>Date:</strong> 2025-03-15</p>
+                    <p><strong>Venue:</strong> The Laughing Spot</p>
+                    <p><strong>Status:</strong> Pending</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Available Venues Section -->
+        <section class="event-venue-container">
+          <section class="venue-availability">
+              <h2 style="margin-bottom: 5px; text-align: center; font-size: 40px;">Available Venues</h2>
+              <div class="venue-list" id="venueContainer">
+                  <!-- Placeholder Cards (Shown before Firebase data loads) -->
+                  <div class="venue-card placeholder"></div>
+                  <div class="venue-card placeholder"></div>
+                  <div class="venue-card placeholder"></div>
+              </div>
+          </section>
+      </section>
+      
+        <br>
+    
+        <!-- Notifications Section -->
+      <section class="notifications">
+        <h2 class="notification-title">Notifications</h2>
+        <div id="notificationList">
+            <!-- Placeholder Notification Cards -->
+          <div class="notification-card">
+            <p class="notification-text">🔔 New event request pending approval...</p>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="notification-card">
+            <p class="notification-text">📅 Venue booking confirmed for your event.</p>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="notification-card">
+            <p class="notification-text">⚠️ Payment pending for venue reservation.</p>
+            <button class="close-btn">&times;</button>
+        </div>
+        </div>
+      </section>
+
+    
+    </div>
+    
+
+    <script src="script_dashboard.js"></script>
+    <script src="/dark_mode.js"></script>
+
+</body>
+</html>

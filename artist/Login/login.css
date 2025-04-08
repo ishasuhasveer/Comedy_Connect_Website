@@ -1,0 +1,130 @@
+/* Universal Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body Styling */
+body {
+    height: 100vh;
+    background: radial-gradient(circle at top left, 
+        #ff2f00, 
+        #EC0868,    
+        #EC7D10,
+        #ff2f00,
+        #fcbe13,
+        #ff2f00,
+        #EC7D10,
+        #c300ff
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centered Authentication Container */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Authentication Box */
+.auth-box {
+    background: #ffffffcc; /* Slight transparency for readability */
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 380px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+.auth-box h2 {
+    color: #1e003e;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* Input Fields */
+.input-field {
+    margin: 15px 0;
+}
+
+.input-field input,
+.input-field select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #f26241;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-field input:focus,
+.input-field select:focus {
+    border-color: #c300ff;
+    box-shadow: 0 0 6px rgba(195, 0, 255, 0.3);
+}
+
+/* Button */
+#auth-btn {
+    width: 100%;
+    padding: 12px;
+    background: #f26241;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#auth-btn:hover {
+    background: #c300ff;
+    transform: translateY(-2px);
+}
+
+/* Toggle Login/Register Text */
+#toggle-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #1e003e;
+}
+
+#toggle-btn {
+    color: #f26241;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#toggle-btn:hover {
+    color: #c300ff;
+    text-decoration: underline;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

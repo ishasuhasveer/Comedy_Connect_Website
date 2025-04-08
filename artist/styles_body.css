@@ -1,0 +1,27 @@
+/* Background Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background: radial-gradient(circle at top left, 
+        #ff2f00, 
+        #EC0868,    
+        #EC7D10,
+        #ff2f00,
+        #fcbe13,
+        #ff2f00,
+        #EC7D10,
+        #c300ff
+
+    );
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+

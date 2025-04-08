@@ -1,0 +1,49 @@
+/* Root variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #151A2D;
+  --section-bg: #f9f9f9;
+  --accent-color: #ec0868;
+  --button-text-color: #ffffff;
+}
+
+/* Dark mode ONLY applies to .content */
+body.dark-mode .content {
+  --bg-color: #1a1a2e;
+  --text-color: #151A2D;
+  --section-bg: #23243a;
+}
+
+/* Apply styles to content */
+.content {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Input fields in .content */
+.content input,
+.content textarea,
+.content select {
+  background-color: white;
+  color: #000;
+}
+
+body.dark-mode .content input,
+body.dark-mode .content textarea,
+body.dark-mode .content select {
+  background-color: #2d2d44;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+/* Buttons use accent color */
+.content button {
+  background: var(--accent-color);
+  color: var(--button-text-color);
+}
+
+/* Danger button */
+.content button.danger {
+  background: #c20000;
+}
