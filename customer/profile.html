@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - ComedyConnect</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="dashboard_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <button class="sidebar-menu-button">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <img src="logo.png" alt="Comedy Connect Logo" class="header-logo" style="width: 200px; height: auto;">
+        </header>
+
+        <nav class="sidebar-nav">
+            <ul class="nav-list primary-nav">
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span class="nav-label">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link">
+                        <i class="fas fa-user-circle"></i>
+                        <span class="nav-label">Profile</span>
+                    </a>
+                </li>
+                <!-- <li class="nav-item dropdown-container">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <i class="fas fa-ticket-alt"></i>
+                        <span class="nav-label">My Tickets</span>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a href="#" class="nav-link dropdown-link">Upcoming Shows</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link dropdown-link">Past Shows</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link dropdown-link">Saved Events</a></li>
+                    </ul>
+                </li> -->
+               
+                <li class="nav-item dropdown-container">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <i class="fas fa-cog"></i>
+                        <span class="nav-label">Settings</span>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a href="#" class="nav-link dropdown-link">Account Settings</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link dropdown-link">Preferences</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link dropdown-link">Notifications</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav-list secondary-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="nav-label">Help & Support</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span class="nav-label">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="profile-container">
+        <div class="profile-header">
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="profile-details">
+                    <h2>John Doe</h2>
+                    <p><i class="fas fa-envelope"></i> john.doe@example.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                </div>
+            </div>
+            <button class="edit-profile-btn">
+                <i class="fas fa-edit"></i> Edit Profile
+            </button>
+        </div>
+
+        <div class="booking-history">
+            <h3>My Bookings</h3>
+            <button id="clear-cancelled-btn" class="clear-cancelled-btn" style="display: none;">
+                <i class="fas fa-trash"></i> Clear Cancelled Events
+            </button>
+            <div class="booking-cards" id="booking-container">
+                <!-- Booking cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="profile.js"></script>
+    <script src="sidebar.js"></script>
+</body>
+</html>
