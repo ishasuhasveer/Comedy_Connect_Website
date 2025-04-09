@@ -38,12 +38,14 @@ body {
 /* Search section styles */
 
 .search-container {
+  
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     gap: 1rem;
     background-color: white;
     padding: 1rem;
+    margin-top:20px;
     border-radius: 8px;
 }
 
@@ -1162,16 +1164,23 @@ body {
     background-color: #ddd;
 }
 
+.centered-container {
+    max-width: 1200px; /* or the same width as the search bar */
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
 .user-greeting-section {
-    background: linear-gradient(45deg, #ff1b6b, #ff7f50, #ffde24);
-    padding: 2rem;
+    width: 100%;
+    background: linear-gradient(45deg,#6e06dd, #ff7f50,#ff1b6b, #ffde24,#b202fe);
+    padding: 1.5rem 1.5rem;
     border-radius: 20px;
-    margin: 2rem;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
 }
 
 .user-info h1 {
